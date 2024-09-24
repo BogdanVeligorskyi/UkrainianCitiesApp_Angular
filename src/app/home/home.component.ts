@@ -29,7 +29,7 @@ export class HomeComponent {
       "year": 907,
       "population": 280000.0,
       "oldnames": "-",
-      "photos": ["../assets/chernihiv_1.jpg", "../assets/chernihiv_2.jpg", "../assets/chernihiv_3.jpg", "../assets/chernihiv_4.jpg"],
+      "photos": ["../assets/chernihiv_2.jpg", "../assets/chernihiv_1.jpg", "../assets/chernihiv_3.jpg", "../assets/chernihiv_4.jpg"],
       "description": "Одне з провідних міст Київської Русі",
       "landmarks": [],
     },

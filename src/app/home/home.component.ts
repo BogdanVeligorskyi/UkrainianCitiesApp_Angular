@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CitiesCardsComponent } from '../cities-cards/cities-cards.component';
 import { CitiesCards } from '../citiescards';
+import { CitiesService } from '../cities.service';
 
 @Component({
   selector: 'app-home',
@@ -21,28 +22,10 @@ import { CitiesCards } from '../citiescards';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  citiesCardsList: CitiesCards[] = [
-    {
-      "id": 0,
-      "name": "Чернігів",
-      "region": "Чернігівська область",
-      "year": 907,
-      "population": 280000.0,
-      "oldnames": "-",
-      "photos": ["../assets/chernihiv_2.jpg", "../assets/chernihiv_1.jpg", "../assets/chernihiv_3.jpg", "../assets/chernihiv_4.jpg"],
-      "description": "Одне з провідних міст Київської Русі",
-      "landmarks": [],
-    },
-    {
-      "id": 1,
-      "name": "Чернігів",
-      "region": "Чернігівська область",
-      "year": 907,
-      "population": 280000.0,
-      "oldnames": "-",
-      "photos": ["../assets/chernihiv_1.jpg", "../assets/chernihiv_2.jpg", "../assets/chernihiv_3.jpg", "../assets/chernihiv_4.jpg"],
-      "description": "Одне з провідних міст Київської Русі",
-      "landmarks": [],
-    },
-  ];
+  citiesCardsList: CitiesCards[] = [];
+  citiesService: CitiesService = inject(CitiesService);
+
+  constructor() {
+    this.citiesCardsList = this.citiesService.getAllCities();
+  }
 }

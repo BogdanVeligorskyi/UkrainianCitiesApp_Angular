@@ -1,29 +1,29 @@
-.listing-photo { 
-    width: 100%;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0; 
+.details-photo { 
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; 
 }
 
-.listing-photo-section {
-    width: 47%;
-    margin: 5px;
-    display: inline-block; 
+.details-photos-section {
+  width: 47%;
+  margin: 5px;
+  display: inline-block; 
 }
 
 .details-header {
-    color: blue;
-    text-align: center;
-    font-size: 35px;
-    border-radius: 2px;
-    padding: 5px 5px 0 5px;
-    margin: 5px;
+  color: blue;
+  text-align: center;
+  font-size: 35px;
+  border-radius: 2px;
+  padding: 5px 5px 0 5px;
+  margin: 5px;
 }
 
-.listing-description {
-    width: 50%;
-    vertical-align: top;
-    text-align: justify;
-    margin: 0 10px 10px 10px;
-    display: inline-block;
+.details-description {
+  width: 50%;
+  vertical-align: top;
+  text-align: justify;
+  margin: 0 10px 10px 10px;
+  display: inline-block;
 }
 

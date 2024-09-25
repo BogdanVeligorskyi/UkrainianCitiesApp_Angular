@@ -1,46 +1,48 @@
 .city-info {
-    background: #e2d4fa;
-    border-radius: 10px;
-    padding-bottom: 10px;
-  }
+  background: #e2d4fa;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
 
-  .city-heading {
-    color: blue;
-    padding: 10px 20px 0 20px;
-  }
+.city-heading {
+  color: blue;
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
   
-  .city-image {
-    height: 250px;
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-    transition: all .4s ease-in-out;
-    object-fit: cover;
-    overflow: hidden;
-  }
+.city-image {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  transition: all .4s ease-in-out;
+  object-fit: cover;
+  overflow: hidden;
+}
 
-  .city-region {
-    padding: 10px 20px 20px 20px; 
-  }
+.city-region {
+  padding: 10px 20px 20px 20px; 
+}
 
-  .city-population, .city-oldnames, .city-year {
-    padding: 1px 20px 1px 20px;
-  }
+.city-population, .city-oldnames, .city-year {
+  padding: 1px 20px 1px 20px;
+}
 
-  .city-region::before {
-    content: url("/assets/location-pin.svg") / "";
-  }
+.city-region::before {
+  content: url("/assets/location-pin.svg") / "";
+}
   
-  section.city-info a {
-    padding-left: 20px;
-    text-decoration: none;
-    color: blue;
-  }
+section.city-info a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: blue;
+}
 
-  section.city-info a:hover {
-    color: black;
-  }
+section.city-info a:hover {
+  color: black;
+}
 
-  section.city-info a::after {
-    content: "\203A";
-    margin-left: 5px;
-  }
+section.city-info a::after {
+  content: "\203A";
+  margin-left: 5px;
+}

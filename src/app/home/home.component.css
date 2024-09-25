@@ -11,7 +11,7 @@ input[type="text"] {
   border: solid 1px black;
   padding: 10px;
   border-radius: 8px;
-  margin-right: 4px;
+  margin: 10px;
   display: inline-block;
   width: 30%;
 }

@@ -13,13 +13,13 @@ import { CitiesCards } from '../citiescards';
       <section>
         <h1 class="details-header">{{citiesCards?.name}}</h1>
       </section>
-      <section class="listing-photo-section">
+      <section class="details-photos-section">
         <section *ngFor="let index of citiesCards?.photos; index as i">
-          <img class="listing-photo" [src]="citiesCards?.photos?.[i]">
+          <img class="details-photo" [src]="citiesCards?.photos?.[i]">
         </section>
       </section>
-      <section class="listing-description">
-        <p class="listing-desciption-text">{{citiesCards?.description}}</p>
+      <section class="details-description">
+        <p class=>{{citiesCards?.description}}</p>
       </section>
     </article>
   `,

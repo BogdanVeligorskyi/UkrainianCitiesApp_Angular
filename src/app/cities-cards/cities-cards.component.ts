@@ -12,6 +12,9 @@ import { RouterModule } from '@angular/router';
       <img class="city-image" [src]="citiesCards.photos[0]">
       <h2 class="city-heading">{{citiesCards.name}}</h2>
       <p class="city-region">{{citiesCards.region}}</p>
+      <p class="city-population">Кількість населення, осіб: {{citiesCards.population}}</p>
+      <p class="city-year">Рік заснування (першої згадки): {{citiesCards.year}}</p>
+      <p class="city-oldnames">Старі назви: {{citiesCards.oldnames}}</p>
       <a [routerLink]="['/details', citiesCards.id]">Детальніше</a>
     </section>
   `,

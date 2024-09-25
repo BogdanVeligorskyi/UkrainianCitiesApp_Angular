@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
   template: `
     <main>
       <header class="brand-name">
-        <input type="image" class=app-logo src="../assets/logo.png">
+        <input type="image" class=app-logo src="../assets/logo.png" [routerLink]="['/']">
       </header>
       <section class="content">
         <router-outlet></router-outlet>

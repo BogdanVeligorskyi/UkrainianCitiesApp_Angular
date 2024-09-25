@@ -10,12 +10,16 @@ import { CitiesCards } from '../citiescards';
   imports: [CommonModule],
   template: `
     <article>
-      <section *ngFor="let index of citiesCards?.photos; index as i">
-        <img class="listing-photo" [src]="citiesCards?.photos?.[i]">
+      <section>
+        <h1 class="details-header">{{citiesCards?.name}}</h1>
+      </section>
+      <section class="listing-photo-section">
+        <section *ngFor="let index of citiesCards?.photos; index as i">
+          <img class="listing-photo" [src]="citiesCards?.photos?.[i]">
+        </section>
       </section>
       <section class="listing-description">
-        <h2 class="listing-heading">{{citiesCards?.name}}</h2>
-        <p class="listing-location">{{citiesCards?.region}}</p>
+        <p class="listing-desciption-text">{{citiesCards?.description}}</p>
       </section>
     </article>
   `,

@@ -6,7 +6,7 @@ import { CitiesCards } from './citiescards';
 })
 export class CitiesService {
 
-  url = "http://localhost:3000/locations"
+  url = "http://localhost:3000/locations";
 
   constructor() { }
 
@@ -17,7 +17,7 @@ export class CitiesService {
 
   async getCityById(id: Number) : Promise<CitiesCards | undefined> {
     const data = await fetch(`${this.url}/${id}`);
-    return await data.json() ?? [];
+    return await data.json() ?? {};
   } 
 
 }

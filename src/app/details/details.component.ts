@@ -33,7 +33,9 @@ export class DetailsComponent {
 
   constructor() {
     const cityCardId = Number(this.route.snapshot.params['id']);
-    this.citiesCards = this.citiesService.getCityById(cityCardId);
+    this.citiesService.getCityById(cityCardId).then(citiesCards => {
+      this.citiesCards = citiesCards;
+    });
   }
 
 }

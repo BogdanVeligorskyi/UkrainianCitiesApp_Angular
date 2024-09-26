@@ -26,6 +26,8 @@ export class HomeComponent {
   citiesService: CitiesService = inject(CitiesService);
 
   constructor() {
-    this.citiesCardsList = this.citiesService.getAllCities();
+    this.citiesService.getAllCities().then((citiesCardsList: CitiesCards[]) => {
+      this.citiesCardsList = citiesCardsList;
+    }); 
   }
 }

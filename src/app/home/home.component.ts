@@ -11,7 +11,7 @@ import { CitiesService } from '../cities.service';
   template: `
     <section>
       <form>
-        <input type="text" #filter placeholder="Пошук за назвою міста" (input)="filterResults(filter.value)" >
+        <input type="text" #filter placeholder="Пошук" (input)="filterResults(filter.value)" >
       </form>
     </section>
     <section class="results">

@@ -15,11 +15,23 @@ import { CitiesCards } from '../citiescards';
       </section>
       <section class="details-photos-section">
         <section *ngFor="let index of citiesCards?.photos; index as i">
-          <img class="details-photo" [src]="citiesCards?.photos?.[i]">
+          <img class="details-photo" [title]="citiesCards?.photos?.[i]?.name" [src]="citiesCards?.photos?.[i]?.file">
         </section>
+        <h2 class="landmarks-heading">Визначні місця</h2>
+        <ul>
+          <li *ngFor="let landmarks of citiesCards?.landmarks;">{{landmarks}}</li>
+        </ul>
       </section>
       <section class="details-description">
-        <p class=>{{citiesCards?.description}}</p>
+        <p>{{citiesCards?.short_description}}</p>
+        <h2>Історія</h2>
+        <p>{{citiesCards?.history_description}}</p>
+        <h2>Геологія та кліматичні умови</h2>
+        <p>{{citiesCards?.climate_description}}</p>
+        <h2>Районування</h2>
+        <p>{{citiesCards?.districts_description}}</p>
+        <h2>Економіка та соціальний склад</h2>
+        <p>{{citiesCards?.economics_description}}</p>
       </section>
     </article>
   `,

@@ -1,11 +1,11 @@
 .city-info {
-  background: #e2d4fa;
+  background: #e0d4b4;
   border-radius: 10px;
   padding-bottom: 10px;
 }
 
 .city-heading {
-  color: blue;
+  color: #1d5fdb;
   margin: 10px;
   padding-left: 10px;
   padding-right: 10px;
@@ -35,7 +35,7 @@
 section.city-info a {
   padding-left: 20px;
   text-decoration: none;
-  color: blue;
+  color: #1d5fdb;
 }
 
 section.city-info a:hover {

@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
   imports: [CommonModule, RouterModule],
   template: `
     <section class="city-info">
-      <img class="city-image" [src]="citiesCards.photos[0]">
+      <img class="city-image" [src]="citiesCards.photos[0].file">
       <h2 class="city-heading">{{citiesCards.name}}</h2>
       <p class="city-region">{{citiesCards.region}}</p>
       <p class="city-population">Кількість населення, осіб: {{citiesCards.population}}</p>

@@ -6,12 +6,12 @@ const routeConfig: Routes = [
     {
         path: '',
         component: HomeComponent,
-        title: 'Home Page'
+        title: 'Міста України | Головна'
     },
     {
         path: 'details/:id',
         component: DetailsComponent,
-        title: 'Details'
+        title: 'Міста України | Детальна інформація'
     }
 ];
 

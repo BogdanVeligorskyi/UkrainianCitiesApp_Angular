@@ -11,7 +11,7 @@
 }
 
 .details-header {
-  color: blue;
+  color: #1d5fdb;
   text-align: center;
   font-size: 35px;
   border-radius: 2px;
@@ -25,5 +25,9 @@
   text-align: justify;
   margin: 0 10px 10px 10px;
   display: inline-block;
+}
+
+.landmarks-heading {
+  margin: 10px;
 }
 

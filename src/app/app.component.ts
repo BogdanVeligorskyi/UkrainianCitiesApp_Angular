@@ -13,6 +13,11 @@ import { RouterModule } from '@angular/router';
       <section class="content">
         <router-outlet></router-outlet>
       </section>
+      <footer>
+		    <label id="footerDiv" align="center">
+		    	Богдан Велігорський. 2024
+		    </label>
+	    </footer>  
     </main>`,
   styleUrls: ['./app.component.css'],
   imports: [HomeComponent, RouterModule],

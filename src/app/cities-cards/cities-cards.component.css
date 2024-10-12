@@ -2,6 +2,8 @@
   background: #e0d4b4;
   border-radius: 10px;
   padding-bottom: 10px;
+  max-width: 400px;
+  overflow: hidden;
 }
 
 .city-heading {
@@ -14,10 +16,15 @@
 .city-image {
   height: 250px;
   width: 100%;
+  max-width: 400px;
   border-radius: 10px 10px 0 0;
   transition: all .4s ease-in-out;
   object-fit: cover;
   overflow: hidden;
+}
+
+.city-image:hover {
+  transform: scale(1.1);
 }
 
 .city-region {

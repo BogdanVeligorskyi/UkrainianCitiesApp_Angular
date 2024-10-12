@@ -1,13 +1,36 @@
 .details-photo { 
   width: 100%;
   object-fit: cover;
-  border-radius: 10px 10px 0 0; 
+  border-radius: 10px 10px 10px 10px; 
 }
 
 .details-photos-section {
   width: 47%;
   margin: 5px;
   display: inline-block; 
+}
+
+.details-description {
+  width: 50%;
+  vertical-align: top;
+  text-align: justify;
+  margin: 10px 10px 10px 10px;
+  display: inline-block;
+}
+
+@media (min-width: 100px) and (max-width: 1031px) {
+  .details-photos-section {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline;
+  }
+  .details-description {
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+  }   
 }
 
 .details-header {
@@ -17,14 +40,6 @@
   border-radius: 2px;
   padding: 5px 5px 0 5px;
   margin: 5px;
-}
-
-.details-description {
-  width: 50%;
-  vertical-align: top;
-  text-align: justify;
-  margin: 0 10px 10px 10px;
-  display: inline-block;
 }
 
 .landmarks-heading {

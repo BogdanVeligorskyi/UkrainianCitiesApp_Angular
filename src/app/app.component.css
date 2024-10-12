@@ -19,3 +19,20 @@ main {
   border-radius: 5px;
   display: inline-block;
 }
+
+footer {
+  height: 66px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: #e0d4b4;
+  color: black;
+  text-align: center;
+  border-top: 2px solid black;
+}	
+
+#footerDiv {
+  padding: 25px;
+	display: block;
+	text-align: center;
+}

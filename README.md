@@ -9,7 +9,7 @@
 
 - Once the code has been downloaded
 
-  `cd homes-app`
+  `cd ukrainian-cities-app`
 
 - Install the dependencies
 
@@ -18,3 +18,5 @@
 - Run the application 
 
   `ng serve`
+
+  `json-server --watch db.json`
